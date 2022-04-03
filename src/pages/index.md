@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-title: test change text.
+title: Test change text.
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
+heading: Test change text.
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
