@@ -2,8 +2,8 @@
 templateKey: index-page
 title: Build a custom data app just for your business
 image: /img/home-jumbotron.jpg
-heading: Test change text.
-subheading: Support sustainable farming while enjoying a cup
+heading: Build a custom data app just for your business
+subheading: Finally, manage your data intuitively and efficiently
 mainpitch:
   title: Why Kaldi
   description: >
