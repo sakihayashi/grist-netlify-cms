@@ -6,7 +6,8 @@ import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage";
+// import FullWidthImage from "../components/FullWidthImage";
+import Hero from '../components/Hero'
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -22,7 +23,8 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      {/* <FullWidthImage img={heroImage} title={title} subheading={subheading} /> */}
+      <Hero img={heroImage} title={title} subheading={subheading}/>
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
