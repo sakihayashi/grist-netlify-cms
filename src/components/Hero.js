@@ -15,10 +15,10 @@ export default function Hero(props) {
     <React.Fragment>
     <section class="hero gradient-green-downward">
         <div class="container is-widescreen is-justify-content-center">
-            <h1 class="title">
+            <h1 class="h1 text-green">
             {title && title}
             </h1>
-            <p class="subtitle">
+            <p class="subtitle text-green">
             Primary subtitle
             </p>
         </div>
