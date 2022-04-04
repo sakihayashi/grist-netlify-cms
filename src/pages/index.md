@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Build a custom data app just for your business
-image: /img/home-jumbotron.jpg
+image: /img/app_img_main.png
 heading: Build a custom data app just for your business
 subheading: Finally, manage your data intuitively and efficiently
 mainpitch:
