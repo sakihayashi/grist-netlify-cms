@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Test change text.
+title: Build a custom data app just for your business
 image: /img/home-jumbotron.jpg
 heading: Test change text.
 subheading: Support sustainable farming while enjoying a cup
