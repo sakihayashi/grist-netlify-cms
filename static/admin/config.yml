@@ -47,6 +47,7 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subtitle, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Heading1, name: heading1, widget: string }
           - { label: Subheading1, name: subheading1, widget: string }
