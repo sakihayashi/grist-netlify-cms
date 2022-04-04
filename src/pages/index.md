@@ -1,9 +1,18 @@
 ---
-templateKey: index-page
-title: Build a custom data app just for your business
-image: /img/app_img_main.png
 heading: Build a custom data app just for your business
 subheading: Finally, manage your data intuitively and efficiently
+templateKey: index-page
+title: Build a custom data app just for your business
+subtitle: Finally, big data can be managed intuitively and efficiently
+image: /img/app_img_main.png
+heading1: Build and Link multiple spreadsheets in secs
+subheading1: Import multiple files and layout them in one page
+heading2: Create custom layouts streamlining your workflow
+subheading2: Add tables and widgests as you need and create layouts which makes
+  sense for your workflow
+heading3: Dynamic charts and reports tracking data from multiple angles
+subheading3: Create charts and reports that update dynamically as you slice and
+  dice data with the click of a mouse
 mainpitch:
   title: Why Kaldi
   description: >
