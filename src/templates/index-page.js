@@ -37,6 +37,7 @@ export const IndexPageTemplate = ({
       <Hero img={heroImage} title={title} subheading={subheading} subtitle={subtitle}  heading2={heading2} heading3={heading3}  subheading2={subheading2} subheading3={subheading3}/>
       <SectionOne heading1={heading1} subheading1={subheading1} img={heroImage}/>
       <SectionTwo heading2={heading2} subheading2={subheading2} heading3={heading3} subheading3={subheading3} img={heroImage} />
+      {/* <SectionThree /> */}
       {/* <section className="section section--gradient">
         <div className="container">
           <div className="section">
