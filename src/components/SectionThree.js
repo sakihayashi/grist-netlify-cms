@@ -12,7 +12,6 @@ export default function SectionTwo(props) {
   } = props;
 
   return (
-    <React.Fragment>
     <section className="hero all">
         <div className="gradient-section gradient-green pb24">
             <div className="container is-max-widescreen is-justify-content-center">
@@ -63,7 +62,6 @@ export default function SectionTwo(props) {
             </div>
         </div> 
     </section>
-    </React.Fragment>
   );
 }
 

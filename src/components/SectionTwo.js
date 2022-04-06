@@ -37,7 +37,7 @@ export default function SectionTwo(props) {
                         formats={["auto", "webp", "avif"]}
                     />
                 </div>
-            </div> 
+            </div>
             <div className="container is-max-widescreen is-justify-content-center">
                 <h2 className="h1 text-green mtb24">
                 {heading3 && heading3}

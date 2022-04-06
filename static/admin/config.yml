@@ -51,9 +51,9 @@ collections:
           - { label: Image, name: image, widget: image }
           - { label: Heading1, name: heading1, widget: string }
           - { label: Subheading1, name: subheading1, widget: string }
+          - { label: Subheading1-1, name: subheading1-1, widget: string }
           - { label: Heading2, name: heading2, widget: string }
           - { label: Subheading2, name: subheading2, widget: string }
-          - { label: Subheading2-1, name: subheading2-1, widget: string }
           - { label: Heading3, name: heading3, widget: string }
           - { label: Subheading3, name: subheading3, widget: string }
           - { label: MoreValues, name: moreValues, widget: object, fields: 
