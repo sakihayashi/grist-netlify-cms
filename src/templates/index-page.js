@@ -31,14 +31,14 @@ export const IndexPageTemplate = ({
   moreValues,
 }) => {
   const heroImage = getImage(image) || image;
-
+  console.log({moreValues})
   return (
     <div>
       {/* <FullWidthImage img={heroImage} title={title} subheading={subheading} /> */}
       <Hero img={heroImage} title={title} subheading={subheading} subtitle={subtitle}  heading2={heading2} heading3={heading3}  subheading2={subheading2} subheading3={subheading3}/>
       <SectionOne heading1={heading1} subheading1={subheading1} img={heroImage}/>
       <SectionTwo heading2={heading2} subheading2={subheading2} heading3={heading3} subheading3={subheading3} img={heroImage} />
-      <SectionThree moreValues={moreValues}/>
+      {/* <SectionThree moreValues={moreValues}/> */}
       {/* <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -133,6 +133,7 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        moreValues={frontmatter.moreValues}
       />
     </Layout>
   );
@@ -184,13 +185,7 @@ query IndexPageTemplate {
       heading1
       heading2
       heading3
-      subheading1_1
       moreValues {
-        valueDetail1
-        valueDetail2
-        valueDetail3
-        valueSubHead1
-        valueSubHead2
         valueSubHead3
         heading
         value {
