@@ -71,6 +71,7 @@ collections:
                     fields:
                       [
                         { label: Icon, name: icon, widget: image },
+                        { label: AltText, name: altText, widget: string },
                         { label: Value, name: value, widget: string },
                         {
                           label: Description,

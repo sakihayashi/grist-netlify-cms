@@ -34,6 +34,7 @@ SectionThree.propTypes = {
       icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       heading: PropTypes.string,
       description: PropTypes.string,
+      altText: PropTypes.string,
     })
   ),
 };
