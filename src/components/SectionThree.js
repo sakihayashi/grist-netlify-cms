@@ -8,7 +8,7 @@ const SectionThree = ({ data }) => (
       <div key={item.heading} className="column">
         <section className="section">
             <GatsbyImage
-                image={img}
+                image={item.icon}
                 objectFit={"cover"}
                 objectPosition="top center"
                 layout="fullWidth"
@@ -34,7 +34,6 @@ SectionThree.propTypes = {
       icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       heading: PropTypes.string,
       description: PropTypes.string,
-      items: PropTypes.array,
     })
   ),
 };
