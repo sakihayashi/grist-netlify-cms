@@ -10,6 +10,7 @@ import BlogRoll from "../components/BlogRoll";
 import Hero from '../components/Hero';
 import SectionOne from "../components/SectionOne";
 import SectionTwo from "../components/SectionTwo";
+import SectionThree from '../components/SectionThree'
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({

@@ -2,40 +2,41 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const Pricing = ({ data }) => (
+const SectionThree = ({ data }) => (
   <div className="columns">
     {data.map((item) => (
-      <div key={price.plan} className="column">
+      <div key={item.heading} className="column">
         <section className="section">
-          <h4 className="has-text-centered has-text-weight-semibold">
-            {price.plan}
-          </h4>
+            <GatsbyImage
+                image={img}
+                objectFit={"cover"}
+                objectPosition="top center"
+                layout="fullWidth"
+                // You can optionally force an aspect ratio for the generated image
+                aspectratio={3 / 1}
+                // This is a presentational image, so the alt should be an empty string
+                alt=""
+                formats={["auto", "webp", "avif"]}
+            />
           <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered">
-            ${price.price}
+            {item.heading}
           </h2>
-          <p className="has-text-weight-semibold">{price.description}</p>
-          <ul>
-            {price.items.map((item) => (
-              <li key={item} className="is-size-5">
-                {item}
-              </li>
-            ))}
-          </ul>
+          <p className="has-text-weight-semibold">{item.description}</p>
         </section>
       </div>
     ))}
   </div>
 );
 
-Pricing.propTypes = {
+SectionThree.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
-      plan: PropTypes.string,
-      price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      heading: PropTypes.string,
       description: PropTypes.string,
       items: PropTypes.array,
     })
   ),
 };
 
-export default Pricing;
+export default SectionThree;
