@@ -1,71 +1,41 @@
-import React from "react";
+import * as React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-export default function SectionThree(props) {
-  const {
-    img,
-    heading2,
-    subheading2,
-    heading3,
-    subheading3,
-  } = props;
+const Pricing = ({ data }) => (
+  <div className="columns">
+    {data.map((item) => (
+      <div key={price.plan} className="column">
+        <section className="section">
+          <h4 className="has-text-centered has-text-weight-semibold">
+            {price.plan}
+          </h4>
+          <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered">
+            ${price.price}
+          </h2>
+          <p className="has-text-weight-semibold">{price.description}</p>
+          <ul>
+            {price.items.map((item) => (
+              <li key={item} className="is-size-5">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
+    ))}
+  </div>
+);
 
-  return (
-    <section className="hero all">
-        <div className="gradient-section gradient-green pb24">
-            <div className="container is-max-widescreen is-justify-content-center">
-                <h2 className="h1 text-green mtb24">
-                {heading2 && heading2}
-                </h2>
-                <p className="subtitle is-4 text-green">
-                {subheading2 && subheading2}
-                </p>
-            </div>
-            <div className="gradient-section">
-                <div className="container is-max-desktop">
-                    <GatsbyImage
-                        image={img}
-                        objectFit={"cover"}
-                        objectPosition="top center"
-                        layout="fullWidth"
-                        // You can optionally force an aspect ratio for the generated image
-                        aspectratio={3 / 1}
-                        // This is a presentational image, so the alt should be an empty string
-                        alt=""
-                        formats={["auto", "webp", "avif"]}
-                    />
-                </div>
-            </div> 
-            <div className="container is-max-widescreen is-justify-content-center">
-                <h2 className="h1 text-green mtb24">
-                {heading3 && heading3}
-                </h2>
-                <p className="subtitle is-4 text-green">
-                {subheading3 && subheading3}
-                </p>
-            </div>
-        </div>
-        <div className="gradient-section">
-            <div className="container is-max-desktop">
-                <GatsbyImage
-                    image={img}
-                    objectFit={"cover"}
-                    objectPosition="top center"
-                    layout="fullWidth"
-                    // You can optionally force an aspect ratio for the generated image
-                    aspectratio={3 / 1}
-                    // This is a presentational image, so the alt should be an empty string
-                    alt=""
-                    formats={["auto", "webp", "avif"]}
-                />
-            </div>
-        </div> 
-    </section>
-  );
-}
-
-SectionThree.propTypes = {
-  img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  moreValues: PropTypes.object,
+Pricing.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      plan: PropTypes.string,
+      price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      description: PropTypes.string,
+      items: PropTypes.array,
+    })
+  ),
 };
+
+export default Pricing;

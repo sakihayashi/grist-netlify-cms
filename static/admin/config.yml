@@ -57,27 +57,17 @@ collections:
           - { label: Heading3, name: heading3, widget: string }
           - { label: Subheading3, name: subheading3, widget: string }
           - { label: MoreValuesTitle, name: moreValuesTitle, widget: string }
-          - { label: MoreValues, name: moreValues, widget: object, fields: 
-              [
-                { label: value1, name: value1, widget: object, fields: [
-                  { label: Icon1, name: icon1, widget: image },
-                  { label: ValueSubHead1, name: valueSubHead1, widget: string },
-                  { label: ValueDetail1, name: valueDetail1, widget: string },
-                  ]
-                },
-                { label: value1, name: value1, widget: object, fields: [
-                  { label: Icon2, name: icon2, widget: image },
-                  { label: ValueSubHead2, name: valueSubHead2, widget: string },
-                  { label: ValueDetail2, name: valueDetail2, widget: string },
-                  ]
-                },
-                { label: value1, name: value1, widget: object, fields: [
-                  { label: Icon3, name: icon3, widget: image },
-                  { label: ValueSubHead3, name: valueSubHead3, widget: string },
-                  { label: ValueDetail3, name: valueDetail3, widget: string },
-                },
-              ]
-          }
+          - {
+              label: MoreValues,
+              name: moreValues,
+              widget: object,
+              fields:
+                [
+                  { label: Icon, name: icon, widget: image }
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: string },
+                ],
+            }
           - {
               label: Mainpitch,
               name: mainpitch,
