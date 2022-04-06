@@ -63,9 +63,22 @@ collections:
               widget: object,
               fields:
                 [
-                  { label: Icon, name: icon, widget: image }
                   { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: string },
+                  {
+                    label: Value,
+                    name: value,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Icon, name: icon, widget: image },
+                        { label: Value, name: value, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                        },
+                      ],
+                  },
                 ],
             }
           - {
@@ -258,30 +271,6 @@ collections:
                           widget: string,
                         },
                         { label: Items, name: items, widget: list },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: MoreValues,
-              name: moreValues,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  {
-                    label: value,
-                    name: value,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Icon, name: icon, widget: image },
-                        { label: Value, name: value, widget: string },
-                        {
-                          label: Description,
-                          name: description,
-                          widget: string,
-                        },
                       ],
                   },
                 ],
