@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-export default function SectionTwo(props) {
+export default function SectionThree(props) {
   const {
     img,
     heading2,
@@ -65,7 +65,7 @@ export default function SectionTwo(props) {
   );
 }
 
-SectionTwo.propTypes = {
+SectionThree.propTypes = {
   img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   moreValues: PropTypes.object,
 };
