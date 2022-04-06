@@ -58,12 +58,15 @@ collections:
           - { label: Subheading3, name: subheading3, widget: string }
           - { label: MoreValues, name: moreValues, widget: object, fields: 
               [
+                { label: Icon1, name: icon1, widget: image },
                 { label: ValueSubHead1, name: valueSubHead1, widget: string },
                 { label: ValueDetail1, name: valueDetail1, widget: string },
+                { label: Icon2, name: icon2, widget: image },
                 { label: ValueSubHead2, name: valueSubHead2, widget: string },
                 { label: ValueDetail2, name: valueDetail2, widget: string },
+                { label: Icon3, name: icon3, widget: image },
                 { label: ValueSubHead3, name: valueSubHead3, widget: string },
-                { label: ValueDetail3, name: valueDetail3, widget: string }
+                { label: ValueDetail3, name: valueDetail3, widget: string },
               ]
           }
           - {
