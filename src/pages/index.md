@@ -1,4 +1,5 @@
 ---
+moreValuesTitle: Total Control
 valueSubHead1: No data lock-ins
 heading: Build a custom data app just for your business
 subheading: Finally, manage your data intuitively and efficiently
@@ -10,19 +11,33 @@ subtitle: Finally, big data can be managed intuitively and efficiently
 image: /img/app_img_main.png
 heading1: Build and Link multiple spreadsheets in secs
 subheading1: Import multiple files and layout them in one page
+subheading1-1: Adding a user-friendly data entry layout in one click
 heading2: Create custom layouts streamlining your workflow
 subheading2: Add tables and widgests as you need and create layouts which makes
   sense for your workflow
-subheading2-1: Adding a user-friendly data entry layout in one click
 heading3: Dynamic charts and reports tracking data from multiple angles
 subheading3: Create charts and reports that update dynamically as you slice and
   dice data with the click of a mouse
 moreValues:
   valueSubHead1: No data lock-ins
+  heading: Total Control
   valueSubHead2: Automatic backups
   valueSubHead3: Developer Friendly
   valueDetail1: Rest easy with granular access control
   valueDetail2: Automatic backup for 30 days
+  value:
+    - icon: /img/lock_open_orange.svg
+      altText: No data lock-ins
+      value: No data lock-ins
+      description: Rest easy with granular access control
+    - icon: /img/autorenew_orange.svg
+      altText: Automatic backups
+      value: Automatic backups
+      description: Automatic backup for 30 days
+    - icon: /img/smile_orange.svg
+      altText: Developer Friendly
+      value: Developer Friendly
+      description: Do more with APIs, Python formulas, and SQLite exports.
   valueDetail3: Do more with APIs, Python formulas, and SQLite exports.
   icon1: /img/lock_open_orange.svg
   icon2: /img/autorenew_orange.svg
@@ -34,6 +49,10 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -72,10 +91,7 @@ intro:
 valueDetail1: Rest easy with granular access control
 valueDetail2: Automatic backup for 30 days
 valueDetail3: Do more with APIs, Python formulas, and SQLite exports.
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+subheading2-1: Adding a user-friendly data entry layout in one click
 main:
   heading: Great coffee with no compromises
   description: >
