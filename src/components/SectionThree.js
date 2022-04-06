@@ -2,9 +2,9 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const SectionThree = ({ data }) => (
+const SectionThree = ({ moreValues }) => (
   <div className="columns">
-    {data.map((item) => (
+    {moreValues.values.map((item) => (
       <div key={item.heading} className="column">
         <section className="section">
             <GatsbyImage
@@ -29,14 +29,10 @@ const SectionThree = ({ data }) => (
 );
 
 SectionThree.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      heading: PropTypes.string,
-      description: PropTypes.string,
-      altText: PropTypes.string,
-    })
-  ),
+moreValues: PropTypes.shape({
+    heading: PropTypes.string,
+    values: PropTypes.array,
+    }),
 };
 
 export default SectionThree;

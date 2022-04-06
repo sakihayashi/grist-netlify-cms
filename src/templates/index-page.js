@@ -28,6 +28,7 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
+  moreValues,
 }) => {
   const heroImage = getImage(image) || image;
 
@@ -37,7 +38,7 @@ export const IndexPageTemplate = ({
       <Hero img={heroImage} title={title} subheading={subheading} subtitle={subtitle}  heading2={heading2} heading3={heading3}  subheading2={subheading2} subheading3={subheading3}/>
       <SectionOne heading1={heading1} subheading1={subheading1} img={heroImage}/>
       <SectionTwo heading2={heading2} subheading2={subheading2} heading3={heading3} subheading3={subheading3} img={heroImage} />
-      {/* <SectionThree /> */}
+      <SectionThree moreValues={moreValues}/>
       {/* <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -103,9 +104,13 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+  moveValues: PropTypes.shape({
+    heading: PropTypes.string,
+    value: PropTypes.array,
   }),
+  // intro: PropTypes.shape({
+  //   blurbs: PropTypes.array,
+  // }),
 };
 
 const IndexPage = ({ data }) => {
@@ -179,6 +184,29 @@ query IndexPageTemplate {
       heading1
       heading2
       heading3
+      subheading1_1
+      moreValues {
+        valueDetail1
+        valueDetail2
+        valueDetail3
+        valueSubHead1
+        valueSubHead2
+        valueSubHead3
+        heading
+        value {
+          altText
+          description
+          values
+          icon {
+            childImageSharp {
+              fixed(width: 100) {
+                src
+                srcSet
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
