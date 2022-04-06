@@ -2,6 +2,8 @@
 valueSubHead1: No data lock-ins
 heading: Build a custom data app just for your business
 subheading: Finally, manage your data intuitively and efficiently
+valueSubHead2: Automatic backups
+valueSubHead3: Developer Friendly
 templateKey: index-page
 title: Build a custom data app just for your business
 subtitle: Finally, big data can be managed intuitively and efficiently
@@ -15,12 +17,16 @@ subheading2-1: Adding a user-friendly data entry layout in one click
 heading3: Dynamic charts and reports tracking data from multiple angles
 subheading3: Create charts and reports that update dynamically as you slice and
   dice data with the click of a mouse
-valueHeader: Total control
-valueDetail1: Rest easy with granular access control
-valueSubHead2: Automatic backups
-valueDetail2: Automatic backup for 30 days
-valueSubHead3: Developer Friendly
-valueDetail3: Do more with APIs, Python formulas, and SQLite exports.
+moreValues:
+  valueSubHead1: No data lock-ins
+  valueSubHead2: Automatic backups
+  valueSubHead3: Developer Friendly
+  valueDetail1: Rest easy with granular access control
+  valueDetail2: Automatic backup for 30 days
+  valueDetail3: Do more with APIs, Python formulas, and SQLite exports.
+  icon1: /img/lock_open_orange.svg
+  icon2: /img/autorenew_orange.svg
+  icon3: /img/smile_orange.svg
 mainpitch:
   title: Why Kaldi
   description: >
@@ -28,10 +34,6 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -67,6 +69,13 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+valueDetail1: Rest easy with granular access control
+valueDetail2: Automatic backup for 30 days
+valueDetail3: Do more with APIs, Python formulas, and SQLite exports.
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 main:
   heading: Great coffee with no compromises
   description: >
@@ -83,4 +92,5 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+valueHeader: Total control
 ---
