@@ -1,4 +1,5 @@
 ---
+valueSubHead1: No data lock-ins
 heading: Build a custom data app just for your business
 subheading: Finally, manage your data intuitively and efficiently
 templateKey: index-page
@@ -10,9 +11,16 @@ subheading1: Import multiple files and layout them in one page
 heading2: Create custom layouts streamlining your workflow
 subheading2: Add tables and widgests as you need and create layouts which makes
   sense for your workflow
+subheading2-1: Adding a user-friendly data entry layout in one click
 heading3: Dynamic charts and reports tracking data from multiple angles
 subheading3: Create charts and reports that update dynamically as you slice and
   dice data with the click of a mouse
+valueHeader: Total control
+valueDetail1: Rest easy with granular access control
+valueSubHead2: Automatic backups
+valueDetail2: Automatic backup for 30 days
+valueSubHead3: Developer Friendly
+valueDetail3: Do more with APIs, Python formulas, and SQLite exports.
 mainpitch:
   title: Why Kaldi
   description: >
