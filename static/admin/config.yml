@@ -56,7 +56,6 @@ collections:
           - { label: Subheading2, name: subheading2, widget: string }
           - { label: Heading3, name: heading3, widget: string }
           - { label: Subheading3, name: subheading3, widget: string }
-          - { label: MoreValuesTitle, name: moreValuesTitle, widget: string }
           - {
               label: MoreValues,
               name: moreValues,
