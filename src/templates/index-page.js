@@ -7,14 +7,23 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 // import FullWidthImage from "../components/FullWidthImage";
-import Hero from '../components/Hero'
+import Hero from '../components/Hero';
+import SectionOne from "../components/SectionOne";
+import SectionTwo from "../components/SectionTwo";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
   title,
+  subtitle,
   heading,
+  heading1,
+  heading2,
+  heading3,
   subheading,
+  subheading1,
+  subheading2,
+  subheading3,
   mainpitch,
   description,
   intro,
@@ -24,8 +33,10 @@ export const IndexPageTemplate = ({
   return (
     <div>
       {/* <FullWidthImage img={heroImage} title={title} subheading={subheading} /> */}
-      <Hero img={heroImage} title={title} subheading={subheading}/>
-      <section className="section section--gradient">
+      <Hero img={heroImage} title={title} subheading={subheading} subtitle={subtitle}  heading2={heading2} heading3={heading3}  subheading2={subheading2} subheading3={subheading3}/>
+      <SectionOne heading1={heading1} subheading1={subheading1} img={heroImage}/>
+      <SectionTwo heading2={heading2} subheading2={subheading2} heading3={heading3} subheading3={subheading3} img={heroImage} />
+      {/* <section className="section section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -71,7 +82,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
@@ -79,7 +90,14 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   heading: PropTypes.string,
+  heading1: PropTypes.string,
+  heading2: PropTypes.string,
+  heading3: PropTypes.string,
+  subheading1: PropTypes.string,
+  subheading2: PropTypes.string,
+  subheading3: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
@@ -96,8 +114,15 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
+        subtitle={frontmatter.subtitle}
         heading={frontmatter.heading}
+        heading1={frontmatter.heading1}
+        heading2={frontmatter.heading2}
+        heading3={frontmatter.heading3}
         subheading={frontmatter.subheading}
+        subheading1={frontmatter.subheading1}
+        subheading2={frontmatter.subheading2}
+        subheading3={frontmatter.subheading3}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -117,35 +142,42 @@ IndexPage.propTypes = {
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        title
-        image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-          }
-          heading
-          description
+query IndexPageTemplate {
+  markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+    frontmatter {
+      title
+      image {
+        childImageSharp {
+          gatsbyImageData(quality: 100, layout: FULL_WIDTH)
         }
       }
+      heading
+      subheading
+      mainpitch {
+        title
+        description
+      }
+      description
+      intro {
+        blurbs {
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
+            }
+          }
+          text
+        }
+        heading
+        description
+      }
+      subtitle
+      subheading1
+      subheading2
+      subheading3
+      heading1
+      heading2
+      heading3
     }
   }
+}
 `;

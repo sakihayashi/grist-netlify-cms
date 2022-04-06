@@ -7,21 +7,44 @@ export default function Hero(props) {
     height = 400,
     img,
     title,
+    subtitle,
     subheading,
     imgPosition = "top left",
   } = props;
 
   return (
     <React.Fragment>
-    <section class="hero gradient-green-downward">
-        <div class="container is-widescreen is-justify-content-center">
-            <h1 class="h1 text-green">
-            {title && title}
-            </h1>
-            <p class="subtitle text-green">
-            Primary subtitle
-            </p>
+    <section className="hero all">
+        <div className="gradient-section gradient-green-downward pb24">
+            <div className="container is-max-widescreen is-justify-content-center">
+                <h1 className="h1 text-green mtb24">
+                {title && title}
+                </h1>
+                <p className="subtitle is-4 text-green">
+                {subtitle && subtitle}
+                </p>
+            </div>
+        
         </div>
+        <div className="gradient-section">
+            <div className="container is-max-desktop">
+                <GatsbyImage
+                    image={img}
+                    objectFit={"cover"}
+                    objectPosition={imgPosition}
+                    // style={{
+                    // gridArea: "1/1",
+                    // maxHeight: height,
+                    // }}
+                    layout="fullWidth"
+                    // You can optionally force an aspect ratio for the generated image
+                    aspectratio={3 / 1}
+                    // This is a presentational image, so the alt should be an empty string
+                    alt={title}
+                    formats={["auto", "webp", "avif"]}
+                />
+            </div>
+        </div>       
     </section>
       <div
         className="margin-top-0"
@@ -30,41 +53,6 @@ export default function Hero(props) {
           alignItems: "center",
         }}
       >
-        {img?.url ? (
-          <img
-            src={img}
-            objectFit={"cover"}
-            objectPosition={imgPosition}
-            style={{
-              gridArea: "1/1",
-              // You can set a maximum height for the image, if you wish.
-              height: height,
-              width: "100%",
-            }}
-            // You can optionally force an aspect ratio for the generated image
-            aspectratio={3 / 1}
-            // This is a presentational image, so the alt should be an empty string
-            alt=""
-            formats={["auto", "webp", "avif"]}
-          />
-        ) : (
-          <GatsbyImage
-            image={img}
-            objectFit={"cover"}
-            objectPosition={imgPosition}
-            style={{
-              gridArea: "1/1",
-              // You can set a maximum height for the image, if you wish.
-              maxHeight: height,
-            }}
-            layout="fullWidth"
-            // You can optionally force an aspect ratio for the generated image
-            aspectratio={3 / 1}
-            // This is a presentational image, so the alt should be an empty string
-            alt=""
-            formats={["auto", "webp", "avif"]}
-          />
-        )}
         {(title || subheading) && (
           <div
             style={{
@@ -77,22 +65,8 @@ export default function Hero(props) {
             }}
           >
             {/* Any content here will be centered in the component */}
-            {title && (
-              <h1
-                className=""
-                // style={{
-                //   boxShadow:
-                //     "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                //   backgroundColor: "rgb(255, 68, 0)",
-                //   color: "white",
-                //   lineHeight: "1",
-                //   padding: "0.25em",
-                // }}
-              >
-                {title}
-              </h1>
-            )}
-            {subheading && (
+   
+            {/* {subheading && (
               <h3
                 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
@@ -107,7 +81,7 @@ export default function Hero(props) {
               >
                 {subheading}
               </h3>
-            )}
+            )} */}
           </div>
         )}
       </div>
@@ -117,6 +91,7 @@ export default function Hero(props) {
 
 Hero.propTypes = {
   img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  subtitle:PropTypes.string,
   title: PropTypes.string,
   height: PropTypes.number,
   subheading: PropTypes.string,

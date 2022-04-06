@@ -53,8 +53,16 @@ collections:
           - { label: Subheading1, name: subheading1, widget: string }
           - { label: Heading2, name: heading2, widget: string }
           - { label: Subheading2, name: subheading2, widget: string }
+          - { label: Subheading2-1, name: subheading2-1, widget: string }
           - { label: Heading3, name: heading3, widget: string }
           - { label: Subheading3, name: subheading3, widget: string }
+          - { label: ValueHeader, name: valueHeader, widget: string }
+          - { label: ValueSubHead1, name: valueSubHead1, widget: string }
+          - { label: ValueDetail1, name: valueDetail1, widget: string }
+          - { label: ValueSubHead2, name: valueSubHead2, widget: string }
+          - { label: ValueDetail2, name: valueDetail2, widget: string }
+          - { label: ValueSubHead3, name: valueSubHead3, widget: string }
+          - { label: ValueDetail3, name: valueDetail3, widget: string }
           - {
               label: Mainpitch,
               name: mainpitch,
