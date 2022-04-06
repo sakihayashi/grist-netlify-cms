@@ -47,7 +47,21 @@ export default function SectionTwo(props) {
                 </p>
             </div>
         </div>
-             
+        <div className="gradient-section">
+            <div className="container is-max-desktop">
+                <GatsbyImage
+                    image={img}
+                    objectFit={"cover"}
+                    objectPosition="top center"
+                    layout="fullWidth"
+                    // You can optionally force an aspect ratio for the generated image
+                    aspectratio={3 / 1}
+                    // This is a presentational image, so the alt should be an empty string
+                    alt=""
+                    formats={["auto", "webp", "avif"]}
+                />
+            </div>
+        </div> 
     </section>
     </React.Fragment>
   );

@@ -10,7 +10,6 @@ export default function SectionOne(props) {
   } = props;
 
   return (
-    <React.Fragment>
     <section className="hero all">
         <div className="gradient-section gradient-orange pb24">
             <div className="container is-max-widescreen is-justify-content-center">
@@ -35,11 +34,9 @@ export default function SectionOne(props) {
                     formats={["auto", "webp", "avif"]}
                 />
             </div>
-        </div>  
         </div>
-             
+        </div>
     </section>
-    </React.Fragment>
   );
 }
 
