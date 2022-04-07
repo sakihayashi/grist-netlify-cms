@@ -59,7 +59,7 @@ buttonStart:
   title: Get Started
   description1: START BUILDING ON GRIST FOR FREE
   description2: Start working productively for free
-  link: https://try.getgrist.com/free-online-spreadsheet-database-lp/clkg/https/docs.getgrist.com/
+  link: https://docs.getgrist.com/
 image: /img/app_img_main.png
 heading1: Build and Link multiple spreadsheets in secs
 subheading1: Import multiple files and layout them in one page
