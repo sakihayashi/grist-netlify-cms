@@ -15,14 +15,14 @@ export default function Hero(props) {
 
   return (
     <>
-    <section className="hero all">
+    <section className="hero all mb10rem">
         <div className="gradient-section gradient-green-downward pb24">
             <Slide　bottom>
                 <div className="container is-max-widescreen is-justify-content-center">
                     <h1 className="h1 text-green mtb24">
                     {title && title}
                     </h1>
-                    <p className="subtitle is-4 text-green">
+                    <p className="subtitle is-4 text-green pb24">
                     {subtitle && subtitle}
                     </p>
                 </div>

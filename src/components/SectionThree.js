@@ -1,10 +1,11 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import Slide from 'react-reveal/Slide';
+import GetStarted from "./GetStarted";
 
 // import icon from '../../static/img/lock_open_orange.svg'
 
-const SectionThree = ({ moreValues }) => {
+const SectionThree = ({ moreValues, buttonStart, contact }) => {
     return (
         <section className="hero all">
             <div className="gradient-section gradient-orange">
@@ -33,7 +34,22 @@ const SectionThree = ({ moreValues }) => {
                         })}
                     </div>
                 </Slide>
-
+                <div className="mb10rem"/>
+                <GetStarted buttonStart={buttonStart} />
+                <div className="mb10rem"/>
+                <div className="container is-max-widescreen is-justify-content-center mb10rem">
+                    <Slide bottom>
+                        <h2 className="h1 text-orange mtb24">
+                            {contact.heading && contact.heading}
+                        </h2>
+                        <p className="subtitle is-4 text-orange">
+                            {contact.description && contact.description}
+                        </p>
+                    </Slide>
+                    <Slide bottom>
+                        <button className="button is-secondary mb10rem">Contact</button>
+                    </Slide>
+                </div>
             </div>
         </section>
 
@@ -45,6 +61,15 @@ SectionThree.propTypes = {
         heading: PropTypes.string,
         value: PropTypes.array,
     }),
+    buttonStart: PropTypes.shape({
+        title: PropTypes.string,
+        description1: PropTypes.string,
+        description2: PropTypes.string,
+    }),
+    contact: PropTypes.shape({
+        heading: PropTypes.string,
+        description: PropTypes.string,
+    })
 };
 
 export default SectionThree;
