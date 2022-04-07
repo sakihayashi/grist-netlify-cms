@@ -73,6 +73,19 @@ valueDetail3: Do more with APIs, Python formulas, and SQLite exports.
 subheading2-1: Adding a user-friendly data entry layout in one click
 moreValues:
   valueSubHead1: No data lock-ins
+  values:
+    - altText: No data lock-ins
+      value: No data lock-ins
+      icon: /img/lock_open_orange.svg
+      description: Rest easy with granular access control
+    - icon: /img/autorenew_orange.svg
+      altText: Automatic backups
+      value: Automatic backups
+      description: Automatic backup for 30 days
+    - icon: /img/smile_orange.svg
+      altText: Developer Friendly
+      value: Developer Friendly
+      description: Do more with APIs, Python formulas, and SQLite exports.
   heading: Total Control
   valueSubHead2: Automatic backups
   valueSubHead3: Developer Friendly
