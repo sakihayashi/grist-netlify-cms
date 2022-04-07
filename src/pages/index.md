@@ -2,6 +2,8 @@
 contact:
   heading: Have Questions?
   description: Still not sure if Grist is for you? We'd love to help you figure it out.
+  buttonText: Contact Grist
+  email: support@getgrist.com
 moreValuesTitle: Total Control
 valueSubHead1: No data lock-ins
 heading: Build a custom data app just for your business
@@ -57,6 +59,7 @@ buttonStart:
   title: Get Started
   description1: START BUILDING ON GRIST FOR FREE
   description2: Start working productively for free
+  link: https://try.getgrist.com/free-online-spreadsheet-database-lp/clkg/https/docs.getgrist.com/
 image: /img/app_img_main.png
 heading1: Build and Link multiple spreadsheets in secs
 subheading1: Import multiple files and layout them in one page
