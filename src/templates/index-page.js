@@ -106,8 +106,15 @@ IndexPageTemplate.propTypes = {
   subheading2: PropTypes.string,
   subheading3: PropTypes.string,
   subheading: PropTypes.string,
-  contact: PropTypes.object,
-  buttonStart: PropTypes.object,
+  contact: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+  }),
+  buttonStart: PropTypes.shape({
+    title: PropTypes.string,
+    description1: PropTypes.string,
+    description2: PropTypes.string,
+  }),
   // mainpitch: PropTypes.object,
   description: PropTypes.string,
   moveValues: PropTypes.shape({
@@ -121,7 +128,7 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
+  
   return (
     <Layout>
       <IndexPageTemplate
@@ -140,6 +147,8 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         moreValues={frontmatter.moreValues}
+        buttonStart={frontmatter.buttonStart}
+        contact={frontmatter.contact}
       />
     </Layout>
   );
@@ -158,7 +167,7 @@ export default IndexPage;
 export const pageQuery = graphql`
 query IndexPageTemplate {
   markdownRemark(
-    frontmatter: {templateKey: {eq: "index-page"}, buttonStart: {}, contact: {}}
+    frontmatter: {templateKey: {eq: "index-page"}}
   ) {
     frontmatter {
       buttonStart {
