@@ -60,6 +60,8 @@ IndexPageTemplate.propTypes = {
   contact: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
+    buttonText: PropTypes.string,
+    email: PropTypes.string,
   }),
   buttonStart: PropTypes.shape({
     title: PropTypes.string,
@@ -161,6 +163,8 @@ query IndexPageTemplate {
       contact {
         heading
         description
+        email
+        buttonText
       }
     }
   }

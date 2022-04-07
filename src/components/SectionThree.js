@@ -54,7 +54,10 @@ const SectionThree = ({ moreValues, buttonStart, contact }) => {
                         </p>
                     </Slide>
                     <Slide bottom>
-                        <button className="button contact-btn mb10rem">Contact</button>
+                        <a href={`mailto:${contact.link}`}>
+                        <button className="button contact-btn mb10rem">{contact.buttonText}</button>
+                        </a>
+                        
                     </Slide>
                 </div>
             </div>
@@ -76,6 +79,8 @@ SectionThree.propTypes = {
     contact: PropTypes.shape({
         heading: PropTypes.string,
         description: PropTypes.string,
+        buttonText: PropTypes.string,
+        email: PropTypes.string,
     })
 };
 
