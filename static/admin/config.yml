@@ -48,6 +48,8 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: SubTitle, name: subtitle, widget: string }
+          - { label: ButtonText, name: buttonText, widget: string }
+          - { label: ButtonDesc, name: buttonDesc, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Heading1, name: heading1, widget: string }
           - { label: Subheading1, name: subheading1, widget: string }
@@ -81,17 +83,6 @@ collections:
                   },
                 ],
             }
-          - {
-              label: Mainpitch,
-              name: mainpitch,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                ],
-            }
-          - { label: Description, name: description, widget: string }
           - {
               label: Intro,
               name: intro,

@@ -1,37 +1,49 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import { GatsbyImage } from "gatsby-plugin-image";
+import Slide from 'react-reveal/Slide';
 
-const SectionThree = ({ moreValues }) => (
-  <div className="columns">
-    {moreValues.values.map((item) => (
-      <div key={item.heading} className="column">
-        <section className="section">
-            <GatsbyImage
-                image={item.icon}
-                objectFit={"cover"}
-                objectPosition="top center"
-                layout="fullWidth"
-                // You can optionally force an aspect ratio for the generated image
-                aspectratio={3 / 1}
-                // This is a presentational image, so the alt should be an empty string
-                alt=""
-                formats={["auto", "webp", "avif"]}
-            />
-          <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered">
-            {item.heading}
-          </h2>
-          <p className="has-text-weight-semibold">{item.description}</p>
+// import icon from '../../static/img/lock_open_orange.svg'
+
+const SectionThree = ({ moreValues }) => {
+    return (
+        <section className="hero all">
+            <div className="gradient-section gradient-orange">
+                <div className="container is-max-widescreen is-justify-content-center pb24">
+                    <Slide bottom>
+                        <h2 className="h1 text-orange mtb24">
+                            {moreValues.heading && moreValues.heading}
+                        </h2>
+                    </Slide>
+                </div>
+                <Slide bottom>
+                    <div className="columns">
+                        {moreValues.value.map((item) => {
+                            const icon = require(`../../static/img/${item.icon.relativePath}`)
+                            return (
+                                <div key={item.value} className="column text-center ">
+                                    <section className="section">
+                                        <img src={icon.default} />
+                                        <h3 className="is-size-3 text-orange">
+                                            {item.value}
+                                        </h3>
+                                        <p className="has-text-weight-semibold text-orange">{item.description}</p>
+                                    </section>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </Slide>
+
+            </div>
         </section>
-      </div>
-    ))}
-  </div>
-);
+
+    )
+}
 
 SectionThree.propTypes = {
-moreValues: PropTypes.shape({
-    heading: PropTypes.string,
-    values: PropTypes.array,
+    moreValues: PropTypes.shape({
+        heading: PropTypes.string,
+        value: PropTypes.array,
     }),
 };
 

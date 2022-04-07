@@ -14,8 +14,8 @@ export default function SectionTwo(props) {
   return (
     <React.Fragment>
     <section className="hero all">
-        <div className="gradient-section gradient-green pb24">
-            <div className="container is-max-widescreen is-justify-content-center">
+        <div className="gradient-section gradient-green">
+            <div className="container is-max-widescreen is-justify-content-center pb24">
                 <h2 className="h1 text-green mtb24">
                 {heading2 && heading2}
                 </h2>
@@ -23,7 +23,7 @@ export default function SectionTwo(props) {
                 {subheading2 && subheading2}
                 </p>
             </div>
-            <div className="gradient-section">
+            <div className="gradient-section mb10rem">
                 <div className="container is-max-desktop">
                     <GatsbyImage
                         image={img}
@@ -33,12 +33,12 @@ export default function SectionTwo(props) {
                         // You can optionally force an aspect ratio for the generated image
                         aspectratio={3 / 1}
                         // This is a presentational image, so the alt should be an empty string
-                        alt=""
+                        alt="grist"
                         formats={["auto", "webp", "avif"]}
                     />
                 </div>
             </div>
-            <div className="container is-max-widescreen is-justify-content-center">
+            <div className="container is-max-widescreen is-justify-content-center pb24">
                 <h2 className="h1 text-green mtb24">
                 {heading3 && heading3}
                 </h2>

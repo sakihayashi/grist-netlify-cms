@@ -5,7 +5,7 @@ import Slide from 'react-reveal/Slide';
 
 export default function Hero(props) {
   const {
-    height = 400,
+    // height = 400,
     img,
     title,
     subtitle,
@@ -27,8 +27,6 @@ export default function Hero(props) {
                     </p>
                 </div>
             </Slide>
-            
-        
         </div>
         <div className="gradient-section">
             <div className="container is-max-desktop">

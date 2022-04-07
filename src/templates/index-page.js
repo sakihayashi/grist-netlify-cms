@@ -1,16 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
 // import FullWidthImage from "../components/FullWidthImage";
 import Hero from '../components/Hero';
 import SectionOne from "../components/SectionOne";
 import SectionTwo from "../components/SectionTwo";
-import SectionThree from '../components/SectionThree'
+import SectionThree from '../components/SectionThree';
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -36,9 +34,12 @@ export const IndexPageTemplate = ({
     <div>
       {/* <FullWidthImage img={heroImage} title={title} subheading={subheading} /> */}
       <Hero img={heroImage} title={title} subheading={subheading} subtitle={subtitle}  heading2={heading2} heading3={heading3}  subheading2={subheading2} subheading3={subheading3}/>
+      <div className="mb10rem"/>
       <SectionOne heading1={heading1} subheading1={subheading1} img={heroImage}/>
+      <div className="mb10rem"/>
       <SectionTwo heading2={heading2} subheading2={subheading2} heading3={heading3} subheading3={subheading3} img={heroImage} />
-      {/* <SectionThree moreValues={moreValues}/> */}
+      <div className="mb10rem"/>
+      <SectionThree moreValues={moreValues}/>
       {/* <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -186,19 +187,13 @@ query IndexPageTemplate {
       heading2
       heading3
       moreValues {
-        valueSubHead3
         heading
         value {
           altText
           description
-          values
+          value
           icon {
-            childImageSharp {
-              fixed(width: 100) {
-                src
-                srcSet
-              }
-            }
+            relativePath
           }
         }
       }
