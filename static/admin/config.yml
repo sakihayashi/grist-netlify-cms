@@ -32,7 +32,7 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
-
+  
   - name: "pages"
     label: "Pages"
     files:
@@ -55,7 +55,6 @@ collections:
                 { label: Description2, name: description2, widget: string },
               ] 
             }
-          - { label: ButtonDesc, name: buttonDesc, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Heading1, name: heading1, widget: string }
           - { label: Subheading1, name: subheading1, widget: string }

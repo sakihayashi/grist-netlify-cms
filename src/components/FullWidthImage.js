@@ -52,7 +52,7 @@ export default function FullWidthImage(props) {
             aspectratio={3 / 1}
             // This is a presentational image, so the alt should be an empty string
             alt=""
-            formats={["auto", "webp", "avif"]}
+            formats={["auto"]}
           />
         )}
         {(title || subheading) && (

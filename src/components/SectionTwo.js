@@ -34,7 +34,7 @@ export default function SectionTwo(props) {
                         aspectratio={3 / 1}
                         // This is a presentational image, so the alt should be an empty string
                         alt="grist"
-                        formats={["auto", "webp", "avif"]}
+                        formats={["auto"]}
                     />
                 </div>
             </div>
@@ -58,7 +58,7 @@ export default function SectionTwo(props) {
                     aspectratio={3 / 1}
                     // This is a presentational image, so the alt should be an empty string
                     alt=""
-                    formats={["auto", "webp", "avif"]}
+                    formats={["auto"]}
                 />
             </div>
         </div> 

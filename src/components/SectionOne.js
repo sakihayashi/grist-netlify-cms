@@ -35,7 +35,7 @@ export default function SectionOne(props) {
                             aspectratio={3 / 1}
                             // This is a presentational image, so the alt should be an empty string
                             alt=""
-                            formats={["auto", "webp", "avif"]}
+                            formats={["auto"]}
                         />
                     </Slide>
                 </div>
@@ -59,7 +59,7 @@ export default function SectionOne(props) {
                             aspectratio={3 / 1}
                             // This is a presentational image, so the alt should be an empty string
                             alt=""
-                            formats={["auto", "webp", "avif"]}
+                            formats={["auto"]}
                         />
                     </Slide>
                 </div>
