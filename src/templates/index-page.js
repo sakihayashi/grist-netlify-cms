@@ -9,6 +9,7 @@ import Hero from '../components/Hero';
 import SectionOne from "../components/SectionOne";
 import SectionTwo from "../components/SectionTwo";
 import SectionThree from '../components/SectionThree';
+import GetStarted from '../components/GetStarted';
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -23,7 +24,8 @@ export const IndexPageTemplate = ({
   subheading1,
   subheading2,
   subheading3,
-  // mainpitch,
+  buttonStart,
+  contact,
   // description,
   // intro,
   moreValues,
@@ -34,6 +36,7 @@ export const IndexPageTemplate = ({
     <div>
       {/* <FullWidthImage img={heroImage} title={title} subheading={subheading} /> */}
       <Hero img={heroImage} title={title} subheading={subheading} subtitle={subtitle}  heading2={heading2} heading3={heading3}  subheading2={subheading2} subheading3={subheading3}/>
+      <GetStarted buttonStart={buttonStart}/>
       <div className="mb10rem"/>
       <SectionOne heading1={heading1} subheading1={subheading1} img={heroImage}/>
       <div className="mb10rem"/>
@@ -103,6 +106,8 @@ IndexPageTemplate.propTypes = {
   subheading2: PropTypes.string,
   subheading3: PropTypes.string,
   subheading: PropTypes.string,
+  contact: PropTypes.object,
+  buttonStart: PropTypes.object,
   // mainpitch: PropTypes.object,
   description: PropTypes.string,
   moveValues: PropTypes.shape({
@@ -152,8 +157,19 @@ export default IndexPage;
 
 export const pageQuery = graphql`
 query IndexPageTemplate {
-  markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+  markdownRemark(
+    frontmatter: {templateKey: {eq: "index-page"}, buttonStart: {}, contact: {}}
+  ) {
     frontmatter {
+      buttonStart {
+				title
+        description1
+        description2
+      }
+      contact {
+				heading
+        description
+      }
       title
       image {
         childImageSharp {
@@ -167,18 +183,6 @@ query IndexPageTemplate {
         description
       }
       description
-      intro {
-        blurbs {
-          image {
-            childImageSharp {
-              gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-            }
-          }
-          text
-        }
-        heading
-        description
-      }
       subtitle
       subheading1
       subheading2
@@ -186,6 +190,7 @@ query IndexPageTemplate {
       heading1
       heading2
       heading3
+      subheading1_1
       moreValues {
         heading
         value {

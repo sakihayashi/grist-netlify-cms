@@ -15,12 +15,12 @@ export default function GetStarted(props) {
         <div className="gradient-section gradient-green-downward pb24">
             <Slide　bottom>
                 <div className="container is-max-widescreen is-justify-content-center">
-                    <h1 className="h1 text-green mtb24">
-                    {/* {title && title} */}
-                    </h1>
-                    <p className="subtitle is-4 text-green">
-                    {/* {subtitle && subtitle} */}
+                    <p className="h1 text-green mtb24">
+                    {buttonStart.title && buttonStart.title}
                     </p>
+                    <button class="button is-primary">
+                    {buttonStart.description1 && buttonStart.description1}
+                    </button>
                 </div>
             </Slide>
         </div>     
