@@ -16,13 +16,6 @@ const SectionThree = ({ moreValues, buttonStart, contact }) => {
                     </Slide>
                 </div>
             <div className="gradient-section gradient-orange">
-                {/* <div className="container is-max-widescreen is-justify-content-center pb24">
-                    <Slide bottom>
-                        <h2 className="h1 text-orange mtb24">
-                            {moreValues.heading && moreValues.heading}
-                        </h2>
-                    </Slide>
-                </div> */}
                 <Slide className="container max-width-2000" bottom>
                     <div className="columns">
                         {moreValues.value.map((item) => {
