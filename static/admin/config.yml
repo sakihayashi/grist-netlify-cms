@@ -57,6 +57,7 @@ collections:
                   { label: title, name: title, widget: string },
                   { label: Description1, name: description1, widget: string },
                   { label: Description2, name: description2, widget: string },
+                  { label: link, name: link, widget: string },
                 ],
             }
           - { label: Image, name: image, widget: image }
@@ -96,6 +97,8 @@ collections:
               [
                 { label: Heading, name: heading, widget: string },
                 { label: Description, name: description, widget: string },
+                { label: ButtonText, name: buttonText, widget: string },
+                { label: email, name: email, widget: string },
               ],
             }
           # - {

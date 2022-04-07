@@ -47,7 +47,7 @@ const SectionThree = ({ moreValues, buttonStart, contact }) => {
                         </p>
                     </Slide>
                     <Slide bottom>
-                        <button className="button is-secondary mb10rem">Contact</button>
+                        <button className="button contact-btn mb10rem">Contact</button>
                     </Slide>
                 </div>
             </div>
