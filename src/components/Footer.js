@@ -11,7 +11,7 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer className="footer has-text-white-ter">
-        <div className="container is-max-desktop flexSpaceBet">
+        <div className="container max-width-2000 flexSpaceBet">
           <div className="content leftDiv">
             <img
               src={logo}

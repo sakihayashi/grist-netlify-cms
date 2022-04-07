@@ -15,10 +15,10 @@ export default function SectionOne(props) {
         <div className="gradient-section gradient-orange">
             <div className="container is-max-widescreen is-justify-content-center pb24">
                 <Slide bottom>
-                    <h2 className="h1 text-orange mtb24">
+                    <h2 className="h2 text-orange mtb24">
                     {heading1 && heading1}
                     </h2>
-                    <p className="subtitle is-4 text-orange">
+                    <p className="subtitle p text-orange">
                     {subheading1 && subheading1}
                     </p>
                 </Slide>
@@ -42,7 +42,7 @@ export default function SectionOne(props) {
             </div>
             <div className="container is-max-widescreen is-justify-content-center pb24">
                 <Slide bottom>
-                    <p className="subtitle is-4 text-orange">
+                    <p className="subtitle p text-orange">
                     {subheading1 && subheading1}
                     </p>
                 </Slide>

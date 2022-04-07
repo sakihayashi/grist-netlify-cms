@@ -26,8 +26,6 @@ export const IndexPageTemplate = ({
   subheading3,
   buttonStart,
   contact,
-  // description,
-  // intro,
   moreValues,
 }) => {
   const heroImage = getImage(image) || image;
@@ -67,6 +65,7 @@ IndexPageTemplate.propTypes = {
     title: PropTypes.string,
     description1: PropTypes.string,
     description2: PropTypes.string,
+    link: PropTypes.string,
   }),
   // mainpitch: PropTypes.object,
   description: PropTypes.string,
@@ -157,6 +156,7 @@ query IndexPageTemplate {
         title
         description1
         description2
+        link
       }
       contact {
         heading

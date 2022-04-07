@@ -22,7 +22,7 @@ export default function Hero(props) {
                     <h1 className="h1 text-green mtb24">
                     {title && title}
                     </h1>
-                    <p className="subtitle is-4 text-green pb24">
+                    <p className="subtitle p text-green pb24">
                     {subtitle && subtitle}
                     </p>
                 </div>

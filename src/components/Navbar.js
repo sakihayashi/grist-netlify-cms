@@ -38,7 +38,7 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
+        <div className="container max-width-2000">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item is-flex" title="Logo">
               <img src={logo} alt="Grist" style={{ width: "190px", alignSelf: "center", marginTop: "16px"}} />

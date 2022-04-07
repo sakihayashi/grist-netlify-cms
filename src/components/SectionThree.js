@@ -8,15 +8,22 @@ import GetStarted from "./GetStarted";
 const SectionThree = ({ moreValues, buttonStart, contact }) => {
     return (
         <section className="hero all">
+            <div className="container is-max-widescreen is-justify-content-center pb24">
+                    <Slide bottom>
+                        <h2 className="h2 text-orange mtb24">
+                            {moreValues.heading && moreValues.heading}
+                        </h2>
+                    </Slide>
+                </div>
             <div className="gradient-section gradient-orange">
-                <div className="container is-max-widescreen is-justify-content-center pb24">
+                {/* <div className="container is-max-widescreen is-justify-content-center pb24">
                     <Slide bottom>
                         <h2 className="h1 text-orange mtb24">
                             {moreValues.heading && moreValues.heading}
                         </h2>
                     </Slide>
-                </div>
-                <Slide bottom>
+                </div> */}
+                <Slide className="container max-width-2000" bottom>
                     <div className="columns">
                         {moreValues.value.map((item) => {
                             const icon = require(`../../static/img/${item.icon.relativePath}`)
@@ -24,7 +31,7 @@ const SectionThree = ({ moreValues, buttonStart, contact }) => {
                                 <div key={item.value} className="column text-center ">
                                     <section className="section">
                                         <img src={icon.default} />
-                                        <h3 className="is-size-3 text-orange">
+                                        <h3 className="h3 text-orange">
                                             {item.value}
                                         </h3>
                                         <p className="has-text-weight-semibold text-orange">{item.description}</p>
@@ -39,10 +46,10 @@ const SectionThree = ({ moreValues, buttonStart, contact }) => {
                 <div className="mb10rem"/>
                 <div className="container is-max-widescreen is-justify-content-center mb10rem">
                     <Slide bottom>
-                        <h2 className="h1 text-orange mtb24">
+                        <h2 className="h2 text-orange mtb24">
                             {contact.heading && contact.heading}
                         </h2>
-                        <p className="subtitle is-4 text-orange">
+                        <p className="subtitle p text-orange">
                             {contact.description && contact.description}
                         </p>
                     </Slide>

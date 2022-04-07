@@ -18,10 +18,10 @@ export default function SectionTwo(props) {
                 <div className="gradient-section gradient-green">
                     <div className="container is-max-widescreen is-justify-content-center pb24">
                         <Slide bottom>
-                            <h2 className="h1 text-green mtb24">
+                            <h2 className="h2 text-green mtb24">
                                 {heading2 && heading2}
                             </h2>
-                            <p className="subtitle is-4 text-green">
+                            <p className="subtitle p text-green">
                                 {subheading2 && subheading2}
                             </p>
                         </Slide>
@@ -46,14 +46,14 @@ export default function SectionTwo(props) {
                     </div>
                     <div className="container is-max-widescreen is-justify-content-center pb24">
                         <Slide bottom>
-                            <h2 className="h1 text-green mtb24">
+                            <h2 className="h2 text-green mtb24">
                                 {heading3 && heading3}
                             </h2>
-                            <p className="subtitle is-4 text-green">
+                            <p className="subtitle p text-green">
                                 {subheading3 && subheading3}
                             </p>
                         </Slide>
-
+                    
                     </div>
                 </div>
                 <div className="gradient-section">

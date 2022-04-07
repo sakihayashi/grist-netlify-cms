@@ -19,11 +19,13 @@ export default function GetStarted(props) {
                             </p>
                         </Slide>
                         <Slide bottom>
-                            <button className="button grist-btn is-primary">
-                                {buttonStart.title && buttonStart.title}
-                            </button>
+                            <a href={buttonStart.link} target="_blank">
+                                <button className="button grist-btn is-primary">
+                                    {buttonStart.title && buttonStart.title}
+                                </button>
+                            </a>
                         </Slide>
-                        
+
                     </div>
                 </div>
             </section>
@@ -36,5 +38,6 @@ GetStarted.propTypes = {
         title: PropTypes.string,
         description1: PropTypes.string,
         description2: PropTypes.string,
+        link: PropTypes.string,
     })
 };
