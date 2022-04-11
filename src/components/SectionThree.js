@@ -19,12 +19,13 @@ const SectionThree = ({ moreValues, buttonStart, contact }) => {
                 <Slide className="container max-width-2000" bottom>
                     <div className="columns">
                         {moreValues.value.map((item) => {
-                            const icon = require(`../../static${item.icon}`)
+                            const icon = require(`../../static/img/${item.icon.relativePath}`)
+                            // const icon = require(`../../static${item.icon}`)
                             return (
                                 <div key={item.value} className="column text-center ">
                                     <section className="section">
-                                        <img src={icon} />
-                                        {/* <img src={icon.default} /> */}
+                                        {/* <img src={icon} /> */}
+                                        <img src={icon.default} />
                                         <h3 className="h3 text-orange">
                                             {item.value}
                                         </h3>
