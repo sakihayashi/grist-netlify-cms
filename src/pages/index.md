@@ -56,7 +56,7 @@ intro:
 title: Build a custom data app just for your business
 subtitle: Finally, big data can be managed intuitively and efficiently
 buttonStart:
-  title: Get Started
+  title: Get Started!!
   description1: START BUILDING ON GRIST FOR FREE
   description2: Start working productively for free
   link: https://docs.getgrist.com/
