@@ -23,7 +23,8 @@ const SectionThree = ({ moreValues, buttonStart, contact }) => {
                             return (
                                 <div key={item.value} className="column text-center ">
                                     <section className="section">
-                                        <img src={icon.default} />
+                                        <img src={icon} />
+                                        {/* <img src={icon.default} /> */}
                                         <h3 className="h3 text-orange">
                                             {item.value}
                                         </h3>
